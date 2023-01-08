@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header{
+  background-color: #333333;
+  width:100%;
+  position:fixed;
+  z-index:999;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 13px 100px;
+}
+
+.logo{
+  color:#D22B2B;
+  font-weight:700;
+  text-decoration:none;
+  font-size:1.8em;
+  transition:0.5s ease;
+}
+
+.logo:hover{
+  color:aliceblue;
+}
+
+.navigation{
+  padding-left: 90px;
+}
+.navigation a{
+  color:#D22B2B;
+  font-weight:600;
+  font-size:1.2em;
+  text-decoration:none;
+  text-align: center;
+  padding-right: 20px;
+  transition:0.5s ease;
+}
+
+.navigation a:hover{
+  color:aliceblue;
+}
+.cta{
+  color:#D22B2B;
+  font-size:1.2em;
+  font-weight:700;
+  text-decoration:none;
+  padding:5px;
+  border-radius:  20px;
+  transition:0.5s ease;
+  margin-right:10px;
+}
+.cta2{
+  color:#D22B2B;
+  font-size:1.2em;
+  font-weight:700;
+  text-decoration:none;
+  padding:5px 15px;
+  border-radius:  20px;
+  background-color: aliceblue;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.cta:hover{
+  background-color:aliceblue;
+  transform:scale(1.1);
+}
+.cta2:hover{
+  background-color:rgb(165, 162, 162);
+}
+section{
+  Padding: 100px 170px;
+  background: url(../7.jpg) no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center;
+  width:100%;
+  height:100vh;
+}
+
+.listing{
+  position: absolute;
+  top:550px;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+}
+.page1, .pic1, .page2, .css-list, .c-content, .c-title{
+  animation: fadeIn 2s;
+}
+.one .page1 h3{
+  text-transform: uppercase;
+}
+
+.one .page1 span{
+  font-style:italic;
+}
+
+.one .page1 h2,h3,h4{
+  font-size:2em;
+  font-weight:700;
+  text-align:center;
+  padding:20px;
+  color:#D22B2B;
+}
+
+.page2 h2{
+  color:#D22B2B;
+  text-align:center;
+  font-style: italic;
+  font-weight:700;
+  font-size:2em;
+}
+
+section .lff{
+  padding-bottom:20px;
+}
+.info ul li{
+  color:whitesmoke;
+  font-size:1em;
+  font-weight:500;
+  text-align: left;
+  word-spacing: 3px;
+  padding: 5px 20px;
+}
+
+span1{
+  color:#D22B2B;
+  font-weight:600;
+}
+
+.info h3{
+  color:whitesmoke;
+  font-size:1em;
+  font-weight:500;
+  text-align: left;
+  word-spacing: 3px;
+}
+.css-list{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left:270px;
+}
+.csslist-ri li{
+  list-style: none;
+  padding:20px 0px;
+  text-align: center;
+}
+.csslist-ri li a{
+  color:whitesmoke;
+  font-size:1.1em;
+  font-weight:600;
+  text-decoration: none;
+  transition:0.5s ease;
+}
+.csslist-ri li a:hover{
+  color:#D22B2B;
+}
+.csslist-mid li{
+  list-style: none;
+  padding:20px 225px;
+  text-align: center;
+}
+.csslist-mid li a{
+  color:whitesmoke;
+  font-size:1.1em;
+  font-weight:600;
+  text-decoration: none;
+  transition:0.5s ease;
+}
+.csslist-mid li a:hover{
+  color:#D22B2B;
+}
+.csslist-le li{
+  list-style: none;
+  padding:20px 0px;
+  text-align: center;
+}
+.csslist-le li a{
+  color:whitesmoke;
+  font-size:1.1em;
+  font-weight:600;
+  text-decoration: none;
+  transition:0.5s ease;
+}
+.csslist-le li a:hover{
+  color:#D22B2B;
+}
+.c-title{
+  display:flex;
+  justify-content:center;
+  color:#D22B2B;
+  font-size:2em;
+  font-weight:800;
+  padding-top:50px;
+  padding-bottom:40px;
+}
+
+.c-content{
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+}
+
+.contact-card{
+  background:#333333;
+  width:22em;
+  box-shadow: 0 1px 15px black;
+  border-radius:10px;
+  padding:30px;
+  margin:20px;
+  transition:0.7s ease;
+}
+
+.contact-icon{
+  color:#D22B2B;
+  font-size:8em;
+  text-align:center;
+}
+
+.contact-info h3{
+  color:#D22B2B;
+  font-size: 1.8em;
+  font-weight:700;
+  text-align:center;
+  padding-bottom: 10px;
+}
+
+.contact-info p{
+  font-size:1.2em;
+  font-weight:700;
+  text-align:center;
+  transition:0.7s ease;
+}
+
+.contact-card:hover{
+  background-color: grey;
+  transform:scale(1.1)
+}
+
+.test{
+  text-align: center;
+  padding-top:100px;
+  color:#D22B2B;
+  font-size:5em;
+  font-weight:700;
+}

@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schools</title>
+    <link rel="stylesheet" href="../Styles/tags-3.css">
+</head>
+<body>
+    <header>
+        <a href="../Main pages/index.html" class="logo">Schools</a>
+        <nav class="navigation">
+            <a href="../Main pages/css.html">CSS</a>
+            <a href="../Main pages/html.html">HTML</a>
+        </nav>
+        <div>
+            <a href="../Main pages/register.html" class="cta2">Log in</a>
+            <a href="../Main pages/contact.html" class="cta"><buttom>Contact</buttom></a>
+        </div>
+    </header>
+    
+    <section class="tags">
+        <div class="tags-hd">
+            <h2>text-shadow</h2>
+            <h2 id="tinfo">The text-shadow CSS property adds shadows to text.</h2>
+        </div>
+        <div class="container">
+            <div onclick="document.getElementById('txt').style.textShadow = '1px 1px 2px purple'">
+                <div class="btn" ">text-shadow: 1px 1px 2px purple;</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.textShadow = '#2a10b1 1px 0 10px'">
+                <div class="btn" ">text-shadow: #2a10b1 1px 0 10px;</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.textShadow = '5px 5px #2a10b1'">
+                <div class="btn" ">text-shadow: 4px 4px #2a10b1;</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.textShadow = '#2A10B1 2px 5px'">
+                <div class="btn" ">text-shadow: blue 2px 5px;</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.textShadow = '#2A10B1 5px 10px'">
+                <div class="btn" ">text-shadow: 5px 10px;</div>
+            </div>
+        </div>
+        <div class="tag-box">
+            <p id="txt">Egypt, officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia via a land bridge formed by the Sinai Peninsula.</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            let prevDiv;
+
+$(".btn").click(function(){
+  $(prevDiv).removeClass('border');
+  $(this).addClass('border');
+  
+  prevDiv = $(this);
+});
+        </script>
+    </section>

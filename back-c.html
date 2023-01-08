@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schools</title>
+    <link rel="stylesheet" href="../Styles/tags.css">
+</head>
+<body>
+    <header>
+        <a href="../Main pages/index.html" class="logo">Schools</a>
+        <nav class="navigation">
+            <a href="../Main pages/css.html">CSS</a>
+            <a href="../Main pages/html.html">HTML</a>
+        </nav>
+        <div>
+            <a href="../Main pages/register.html" class="cta2">Log in</a>
+            <a href="../Main pages/contact.html" class="cta"><buttom>Contact</buttom></a>
+        </div>
+    </header>
+    
+    <section class="tags">
+        <div class="tags-hd">
+            <h2>background-color</h2>
+            <h2 id="tinfo">The background-color CSS property sets the background color of an element.</h2>
+        </div>
+        <div class="container">
+            <div onclick="document.getElementById('txt').style.backgroundColor = 'blue'">
+                <div class="btn" ">background-color: blue;</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.backgroundColor = '#9D46A9'">
+                <div class="btn" ">background: #9D46A9;</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.backgroundColor = 'rgb(22, 141, 45)'">
+                <div class="btn" ">background: rgb(22, 141, 45);</div>
+            </div>
+            <div onclick="document.getElementById('txt').style.backgroundColor = 'hsl(30, 100%, 50%)'">
+                <div class="btn" ">background: hsl(30, 100%, 50%);</div>
+            </div>
+        </div>
+        <div class="tag-box">
+            <p id="txt">Welcome to SCHOOLS guide!</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            let prevDiv;
+
+$(".btn").click(function(){
+  $(prevDiv).removeClass('border');
+  $(this).addClass('border');
+  
+  prevDiv = $(this);
+});
+        </script>
+    </section>
